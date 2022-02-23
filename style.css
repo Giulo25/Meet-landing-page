@@ -47,6 +47,7 @@ p {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    border: none;
 }
 .btn-1 {
     background-color: #4D96A9;
