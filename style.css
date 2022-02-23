@@ -1,0 +1,193 @@
+*,
+*:before,
+*:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* body {
+    background-color: #313131;
+} */
+/* Typoghrapy */
+h1 {
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    color: #28283D;
+}
+h2 {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: #28283D;
+}
+.overline {
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #4D96A9;
+}
+p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #87879D;
+}
+
+.btn {
+    border-radius: 3rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-1 {
+    background-color: #4D96A9;
+    padding: 1.8rem 4rem;
+
+}
+.btn-1:hover {
+    background-color: #71C0D4;
+}
+.btn-1 span {
+    color: #8FE3F9;
+}
+.btn-2 {
+    background-color: #855FB1;
+    padding: 1.8rem 2.9rem;
+
+}
+.btn-2:hover {
+    background-color: #B18BDD;
+}
+main {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+/* hero section
+--------------------------------------------- */
+
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+.hero-logo-container {
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-block: 11rem;
+    background: url(assets/desktop/image-hero-left.png) -3% 25% no-repeat,
+    url(assets/desktop/image-hero-right.png) 103% 50% no-repeat;
+}
+.hero-text p {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-inline: 5rem;
+}
+.left-img {
+    position: relative;
+}
+.left-img img {
+    position: absolute;
+    top: -5rem;
+    left: -3rem;
+}
+.right-img {
+    position: relative;
+}
+.right-img img {
+    position: absolute;
+    right: -3.5rem;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+
+/* Media queries */
+
+/* 1216px */
+@media (max-width: 76em) {
+   .hero-text {
+        /* height: 75rem; */
+        justify-content: end;
+        background: url(assets/tablet/image-hero.png) 50% 10% no-repeat;
+        padding-inline: 0;
+        padding-top: 40rem;
+        padding-bottom: 0;
+    }
+    .hero-text p {
+        padding-inline: 4rem;
+    }
+    .hero-btn {
+        margin-bottom: 0;
+    }
+    
+}
+/* 768px */
+@media (max-width: 48em) {
+    .hero-logo-container {
+        margin-top: 4.8rem;
+    }
+    .hero-text {
+        height: 68rem;
+        background: url(assets/tablet/image-hero.png) 50% 13%/107%  no-repeat;
+        padding-block: 0rem;
+        gap: 0rem;
+    }
+    .hero-text p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        padding-inline: 5rem;
+        margin-top: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+    h1 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        color: #28283D;
+    }
+    
+}
+/* 384px */
+@media (max-width: 24em) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+    .hero-text {
+        height: 72rem;
+    }
+    .hero-text p {
+        padding-inline: 2rem;
+    }
+    .hero-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*  da fare
+verificare utilità padding block del hero-text
+fare in modo che l'altezza dell'hero-text sia flessibile cosi da tablet
+mobile si adatta da solo
+*/
