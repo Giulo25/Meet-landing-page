@@ -46,6 +46,7 @@ p {
     font-size: 1.6rem;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-1 {
     background-color: #4D96A9;
@@ -66,7 +67,8 @@ p {
 .btn-2:hover {
     background-color: #B18BDD;
 }
-main {
+main,
+header {
     max-width: 144rem;
     margin: 0 auto;
 }
@@ -94,10 +96,13 @@ main {
     background: url(assets/desktop/image-hero-left.png) -3% 25% no-repeat,
     url(assets/desktop/image-hero-right.png) 103% 50% no-repeat;
 }
-.hero-text p {
-    max-width: 60rem;
+.hero-text h1 {
+    max-width: 10ch;
     margin: 0 auto;
-    padding-inline: 5rem;
+}
+.hero-text p {
+    max-width: 55rem;
+    margin: 0 auto;
 }
 .left-img {
     position: relative;
@@ -125,8 +130,8 @@ main {
 
 /* Media queries */
 
-/* 1216px */
-@media (max-width: 76em) {
+/* 1280px */
+@media (max-width: 80em) {
    .hero-text {
         /* height: 75rem; */
         justify-content: end;
@@ -136,12 +141,13 @@ main {
         padding-bottom: 0;
     }
     .hero-text p {
-        padding-inline: 4rem;
+        max-width: 50rem;
+        /* padding-inline: 6rem; */
     }
     .hero-btn {
         margin-bottom: 0;
     }
-    
+
 }
 /* 768px */
 @media (max-width: 48em) {
@@ -156,8 +162,9 @@ main {
     }
     .hero-text p {
         font-size: 1.6rem;
+        max-width: 45rem;
         line-height: 2.6rem;
-        padding-inline: 5rem;
+        padding-inline: 2.4rem;
         margin-top: 2.4rem;
         margin-bottom: 3.2rem;
     }
@@ -166,7 +173,7 @@ main {
         line-height: 4.8rem;
         color: #28283D;
     }
-    
+
 }
 /* 384px */
 @media (max-width: 24em) {
