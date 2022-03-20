@@ -17,6 +17,7 @@ body {
     background-color: #FAFAFA;
     max-width: 76.8rem;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /* Typoghrapy */
