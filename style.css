@@ -378,11 +378,4 @@ footer p {
         margin: 0;
     }
 }
-/* 1440px */
-@media (min-width: 90em ) {
-    .hero-section {
-        background: url(assets/desktop/image-hero-left.png) left top no-repeat,
-        url(assets/desktop/image-hero-right.png) right bottom no-repeat;
-        
-    }
-}
+
