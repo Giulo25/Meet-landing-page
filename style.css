@@ -94,7 +94,7 @@ header {
 --------------------------------------------- */
 
 .hero-section {
-    background: red url(assets/tablet/image-hero.png) top center/108% no-repeat;
+    background: url(assets/tablet/image-hero.png) top center/108% no-repeat;
     padding-top: min(40vw, 300px);
 }
 
